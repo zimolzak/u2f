@@ -14,6 +14,8 @@ req = {
     "appId": f # must use https despite what you hear
     }
 
+print "number of devices found:", len(L)
+
 for d in L:
     with d as dev:
         print d        
@@ -34,6 +36,8 @@ for d in L:
             else:
                 print type(e)
                 print ' ', e, "I don't know what that error means"
+
+print "Done."
 
 # methods for a device
 #  |  call(self, cmd, data='')
